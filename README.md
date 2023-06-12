@@ -10,3 +10,4 @@ To run this code, Node, an IDE, inquirer and jest is required for it to function
 Use this code whenever the user needs a SVG logo to be generated. Enter "node index" in the terminal with the main folder selected to run the code and "npm run test" in the terminal with the "lib" folder selected to run the test.
 
 ## Walkthrough
+[Click this to watch the walkthrough video](https://drive.google.com/file/d/1hwWk0m_ldQEfT-wIMAP8h_db0QbmLWJd/view?usp=sharing)
