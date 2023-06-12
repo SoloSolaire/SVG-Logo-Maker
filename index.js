@@ -1,7 +1,9 @@
+// imported required files
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateLogo = require('./util/generateLogo')
 
+// prompt questions
 inquirer
     .prompt([
         {
@@ -37,6 +39,7 @@ inquirer
             name: 'colorShape'
         },
     ])
+// asynched to get user input first, then create file and print console.log message
     .then((data) => {
         const svgContent = generateLogo(data);
 

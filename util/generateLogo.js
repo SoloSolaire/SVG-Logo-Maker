@@ -1,3 +1,4 @@
+// function to generate the correct line of code corresponded with the user input
 function renderSvgShape(shape, colorShape) {
     if (shape === 'circle') {
         return `<circle cx="150" cy="100" r="88" fill="${colorShape}" />`
@@ -10,6 +11,7 @@ function renderSvgShape(shape, colorShape) {
     }
 }
 
+// generate content for the svg file using user inputted data
 const generateLogo = ({text, colorText, shape, colorShape}) =>
 `<svg version="1.1"
 width="300" height="200"
