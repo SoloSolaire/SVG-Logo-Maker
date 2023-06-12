@@ -1,12 +1,19 @@
 const inquirer = require('inquirer');
-
+const fs = require('fs');
 
 inquirer
     .prompt([
         {
             type: 'input',
             message: 'Type up to 3 characters for your SVG logo.',
-            name: 'text'
+            name: 'text',
+            validate: function (input) {
+                if (input.length > 3) {
+                    return "You've entered more than 3 characters. Please try again."
+                }  else {
+                    return true
+                }
+            }
         },
         {
             type: 'input',
